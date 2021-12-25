@@ -1,8 +1,46 @@
 body {
-	background-color: aliceblue;
+	background-color: snow;
 	font-family: Verdana, Tahoma, sans-serif;
 }
 
+div {
+	margin: auto;
+	width: min(90%,40rem);
+}
+
+.content {
+	background-color: aliceblue;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	border: 0.15rem solid;
+	border-radius: 0.5rem;
+	border-color: deepskyblue;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.wip {
+	background-color: lightgoldenrodyellow;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0.15rem solid;
+	border-radius: 3rem;
+	border-color: orange;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
 h1 {
-	text-align: center
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+#centerSVG {
+	display: block;
+	margin: auto;
+	width: min(10em,100%);
 }
