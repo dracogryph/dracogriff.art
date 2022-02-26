@@ -8,6 +8,7 @@ class Footer extends HTMLElement {
 				footer {
 					color: snow;
 					font-size: .8rem;
+					margin: 1rem;
 				}
 			</style>
 

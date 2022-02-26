@@ -4,13 +4,13 @@
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	id = "skywardLogo"
-	viewBox = "-100 -100 200 200"
-	width="500px"
-	height="500px"
+	viewBox = "-100 -75 200 150"
+	width="1024px"
+	height="512px"
 	role="img"
 	aria-labelledby="Disassembly and Atmosphere"
-	aria-describedby=""
->
+	aria-describedby="">
+
 	<defs>
     	<radialGradient id="radialGradient">
     		<stop offset="1%" stop-color="white" />
@@ -27,23 +27,127 @@
 	</defs>
 
 	<g mask="url(#whiteMask)">
-		<rect x="-100" y="-100" width="200" height="200" fill="white" />
+		<rect x="-100" y="-100" width="200" height="200" fill="white"/>
+	</g>
+		<g mask="url(#starMask)">
+		<rect x="-100" y="-100" width="200" height="200" fill="white"/>
 	</g>
 	<g mask="url(#blackMask)">
-		<rect x="-100" y="-100" width="200" height="200" fill="black" />
+		<rect x="-100" y="-100" width="200" height="200" fill="black"/>
 	</g>
-	<g mask="url(#starMask)">
-		<rect x="-100" y="-100" width="200" height="200" fill="white" />
-	</g>
+
 
 	<defs>
 		<mask id="whiteMask">
 			<circle cx="0"
 				cy="0"
-				r="80"
+				r="90"
 				fill="none"
 				stroke="url(#linearGradient1)"
-				stroke-width="1"/>
+				stroke-width="3"
+				stroke-dasharray="3 .5"
+				transform="scale(1,.25) rotate(90)">
+			</circle>
+
+			<g transform="rotate(45)">
+				<circle cx="0"
+					cy="0"
+					r="50"
+					fill="none"
+					stroke="url(#linearGradient1)"
+					stroke-width="1"
+					stroke-dasharray="2 .5"
+					transform="scale(1,.5) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(-15)">
+				<circle cx="0"
+					cy="0"
+					r="48"
+					fill="none"
+					stroke="url(#linearGradient1)"
+					stroke-width="3"
+					stroke-dasharray="2 .5"
+					transform="scale(1,.1) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(30)">
+				<circle cx="0"
+					cy="0"
+					r="46"
+					fill="none"
+					stroke="url(#linearGradient1)"
+					stroke-width="1"
+					stroke-dasharray="2 .5"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(-40)">
+				<circle cx="0"
+					cy="0"
+					r="35"
+					fill="none"
+					stroke="url(#linearGradient1)"
+					stroke-width="1"
+					stroke-dasharray="2 .5"
+					transform="scale(1,.6) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(80)">
+				<circle cx="0"
+					cy="0"
+					r="30"
+					fill="none"
+					stroke="url(#linearGradient1)"
+					stroke-width="1"
+					stroke-dasharray="2 .5"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(65)">
+				<circle cx="0"
+					cy="0"
+					r="25"
+					fill="none"
+					stroke="url(#linearGradient1)"
+					stroke-width="1"
+					stroke-dasharray="2 .5"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(50)">
+				<circle cx="0"
+					cy="0"
+					r="20"
+					fill="none"
+					stroke="url(#linearGradient1)"
+					stroke-width="1"
+					stroke-dasharray="2 .5"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(35)">
+				<circle cx="0"
+					cy="0"
+					r="15"
+					fill="none"
+					stroke="url(#linearGradient1)"
+					stroke-width="1"
+					stroke-dasharray="2 .5"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(10)">
+				<circle cx="0"
+					cy="0"
+					r="10"
+					fill="none"
+					stroke="url(#linearGradient1)"
+					stroke-width="1"
+					stroke-dasharray="2 .5"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
 		</mask>
 	</defs>
 
@@ -55,12 +159,104 @@
 
 	<defs>
 		<mask id="blackMask">
+			<g transform="rotate(10)">
+				<circle cx="0"
+					cy="0"
+					r="10"
+					fill="none"
+					stroke="url(#linearGradient2)"
+					stroke-width="1"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(35)">
+				<circle cx="0"
+					cy="0"
+					r="15"
+					fill="none"
+					stroke="url(#linearGradient2)"
+					stroke-width="1"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(50)">
+				<circle cx="0"
+					cy="0"
+					r="20"
+					fill="none"
+					stroke="url(#linearGradient2)"
+					stroke-width="1.5"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(65)">
+				<circle cx="0"
+					cy="0"
+					r="25"
+					fill="none"
+					stroke="url(#linearGradient2)"
+					stroke-width="1.5"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(80)">
+				<circle cx="0"
+					cy="0"
+					r="30"
+					fill="none"
+					stroke="url(#linearGradient2)"
+					stroke-width="1.5"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(-40)">
+				<circle cx="0"
+					cy="0"
+					r="35"
+					fill="none"
+					stroke="url(#linearGradient2)"
+					stroke-width="1"
+					transform="scale(1,.6) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(30)">
+				<circle cx="0"
+					cy="0"
+					r="46"
+					fill="none"
+					stroke="url(#linearGradient2)"
+					stroke-width="1"
+					transform="scale(1,.25) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(-15)">
+				<circle cx="0"
+					cy="0"
+					r="48"
+					fill="none"
+					stroke="url(#linearGradient2)"
+					stroke-width="3"
+					transform="scale(1,.1) rotate(90)">
+				</circle>
+			</g>
+			<g transform="rotate(45)">
+				<circle cx="0"
+					cy="0"
+					r="50"
+					fill="none"
+					stroke="url(#linearGradient2)"
+					stroke-width="1"
+					transform="scale(1,.5) rotate(90)">
+				</circle>
+			</g>
 			<circle cx="0"
 				cy="0"
-				r="80"
+				r="90"
 				fill="none"
 				stroke="url(#linearGradient2)"
-				stroke-width="1"/>
+				stroke-width="3"
+				transform="scale(1,.25) rotate(90)">
+			</circle>
 		</mask>
 	</defs>
 
