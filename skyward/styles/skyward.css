@@ -1,6 +1,6 @@
 :root {
 	--bg_dark: black;
-	--text_dark: whitesmoke;
+	--text_dark: ghostwhite;
 	--bg_light: aliceblue;
 	--text_light: black;
 }
@@ -12,8 +12,25 @@ body {
 	margin: 0;
 }
 
+a:link {
+  color: skyblue;
+}
+a:visited {
+  color: royalblue;
+}
+a:hover {
+  color: deepskyblue;
+}
+a:active {
+  color: skyblue;
+}
+
 div {
 	margin: auto;
+}
+
+img {
+  width: 100%;
 }
 
 h1 {
@@ -24,5 +41,10 @@ h1 {
 .content {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
-	width: min(85%,64rem);
+	width: min(90%,64rem);
+}
+
+.img-desc {
+  text-align: center;
+	font-size: .75rem;
 }

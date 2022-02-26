@@ -20,7 +20,6 @@ class Header extends HTMLElement {
 		}
 		@media only screen and (min-width: 48rem) {
 			.main-logo {
-				
 				width: min(15rem, 50%);
 			}
 		}
@@ -28,6 +27,7 @@ class Header extends HTMLElement {
 		
 	<header>
 		<div class="header">
+    <br>
 			<img src="icons/skyward-logo.svg" class="main-logo"/>`
 	+ this.innerHTML +
 			`</br>
