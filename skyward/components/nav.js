@@ -4,25 +4,10 @@ class Nav extends HTMLElement {
 	}
 	connectedCallback() {
 		this.innerHTML = `
-      <style>
-        a:link {
-          color: white;
-        }
-        a:visited {
-          color: lightcyan;
-        }
-        a:hover {
-          color: royalblue;
-        }
-        a:active {
-          color: lightcyan;
-        }
-      </style>
-      
       <br>
-      <a href="/skyward/atmosphere"><b>Atmosphere</b></a>
+      <a href="/skyward/atmosphere" class="button"><b>Atmosphere</b></a>
       <br><br>
-      <a href="/skyward/sophonts"><b>sophonts</b></a>
+      <a href="/skyward/sophonts" class="button"><b>sophonts</b></a>
       <br><br>
 		`;
 	}
