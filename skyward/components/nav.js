@@ -8,12 +8,21 @@ class Nav extends HTMLElement {
         a:link {
           color: white;
         }
+        a:visited {
+          color: lightcyan;
+        }
+        a:hover {
+          color: royalblue;
+        }
+        a:active {
+          color: lightcyan;
+        }
       </style>
       
       <br>
-      <a href="/skyward/world"><b>World</b></a>
+      <a href="/skyward/atmosphere"><b>Atmosphere</b></a>
       <br><br>
-      <a href="/skyward/sophonts"><b>Sophonts</b></a>
+      <a href="/skyward/sophonts"><b>sophonts</b></a>
       <br><br>
 		`;
 	}
