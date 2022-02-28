@@ -28,7 +28,7 @@ class Header extends HTMLElement {
 	<header>
 		<div class="header">
     <br>
-			<img src="icons/skyward-logo.svg" class="main-logo"/>`
+			<img src="/icons/skyward-logo.svg" class="main-logo"/>`
 	+ this.innerHTML +
 			`</br>
 		</div>

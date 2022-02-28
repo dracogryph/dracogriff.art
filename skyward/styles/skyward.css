@@ -44,6 +44,62 @@ h1 {
 	width: min(90%,64rem);
 }
 
+.hero {
+	background-image:
+		linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.9)),
+		url("/skyward/img/DSC_0141.png");
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+  display: grid;
+  align-items: top;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(3rem, 1fr));
+}
+.hero-center {
+  grid-row: 3;
+  justify-items: center;
+  text-align: center;
+}
+@media only screen and (min-width: 24rem) {
+  .hero-center {
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+}
+.hero-left {
+  grid-row: 1;
+  text-align: center;
+  justify-items: left;
+  margin: 5% 10% 0;
+}
+@media only screen and (min-width: 24rem) {
+  .hero-left {
+    grid-column: 1/2;
+    grid-row: 1;
+    text-align: left;
+  }
+}
+.hero-right {
+  grid-row: 2;
+  text-align: center;
+  justify-items: right;
+  margin: 5% 10% 0;
+}
+@media only screen and (min-width: 24rem) {
+  .hero-right {
+    grid-column: 3/4;
+    grid-row: 1;
+    text-align: right;
+  }
+}
+.main-logo {
+  width: max(4rem,15%);
+  display: block;
+  margin: auto;
+}
+
 .img-desc {
   text-align: center;
 	font-size: .75rem;
