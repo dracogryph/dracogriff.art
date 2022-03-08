@@ -143,7 +143,7 @@ li {
 }
 @media only screen and (min-width: 36rem) {
   .main-logo {
-    width: max(6rem,15%);
+    width: max(6rem,10%);
     display: block;
     margin: auto;
   }
