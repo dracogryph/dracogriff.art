@@ -9,7 +9,7 @@ class Nav extends HTMLElement {
         <ul>
           <li><a href="/skyward/"><b>home</b></a></li>
           <li class="dropdown">
-            <a href="/skyward/sophonts"><b>sophonts</b></a>
+            <a><b>sophonts</b></a>
             <ul class="dropdown-content" id="sophonts">
               <li><a href="/skyward/griffin">griffin</a></li>
               <li><a href="/skyward/tree-of-life">tree-of-life</a></li>
