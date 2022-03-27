@@ -108,7 +108,7 @@ ol > li {
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   list-style-type: none;
 }
-.socials > ul > li {
+.socials > ul > li > a {
   margin: 1rem;
   padding: 1rem 1rem;
   border-color: white;
@@ -122,11 +122,8 @@ ol > li {
   display: flex;
   transition: .2s;
 }
-.socials > ul > li:hover {
-  background-color: rgba(256,256,256,.15);
-}
-.socials > ul > li > a {
-  color: var(--primary);
+.socials > ul > li > a:hover {
+  background-color: rgba(255,255,255,.15);
 }
 
 .figure > ul {
