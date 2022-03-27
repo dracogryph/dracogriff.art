@@ -132,11 +132,11 @@ ol > li {
 .figure > ul {
   margin: 1rem 2rem 1rem 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   list-style-type: none;
 }
 .figure > ul > li {
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 1rem 1rem;
   border-color: white;
   background-color: rgba(0,0,0,.1);
@@ -188,7 +188,7 @@ img.icon {
   filter:invert(1);
 }
 img.thumbnail {
-  width:24rem;
+  width: min(auto,24rem);
   margin: auto;
 }
 img.emoji {
