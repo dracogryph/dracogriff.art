@@ -188,7 +188,7 @@ img.icon {
   filter:invert(1);
 }
 img.thumbnail {
-  width: min(auto,24rem);
+  width: min(100%,24rem);
   margin: auto;
 }
 img.emoji {
