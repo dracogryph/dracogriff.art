@@ -195,5 +195,5 @@ img.emoji {
   height: 2rem;
   width: 2rem;
   vertical-align: -.67rem;
-  filter:drop-shadow(0rem 0rem .1rem rgba(256,256,256,.5));
+  filter:drop-shadow(0rem 0rem .1rem rgba(255,255,255,.5));
 }
