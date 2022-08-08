@@ -1,17 +1,17 @@
 :root {
-	--primary: ghostwhite;
-	--bg: black;
+  --text: black;
+	--bg: white;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
 	font-family: Verdana, Tahoma, sans-serif;
 	background: url("//img/DSC_0167.jpeg");
-	color: var(--primary);
+	color: var(--text);
 	background-color: var(--bg);
-
-  background-image:
-    linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0), rgba(127,172,256,.6)),
-    url("/img/DSC_0167.jpg");
+  background-image: url("/img/DSC_0167.jpg");
   background-position: center top;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -28,153 +28,65 @@ img {
 
 /* HYPERLINKS */
 a:link {
-  color: rgb(256, 2256, 127);
+  color: coral;
 }
 a:visited {
-  color: skyblue;
+  color: crimson;
 }
 a:hover {
-  color: cyan;
+  color: crimson;
 }
 a:active {
-  color: cyan;
+  color: white;
 }
 
 h1 {
-  font-family: 'Gugi', cursive;
+  font-family: 'Jost', sans-serif;
 	text-align: center;
-	font-size: 2.5rem;
-  text-shadow: 0 0 .75rem deepskyblue;
+	font-size: 3rem;
+  font-weight: 700;
 }
 h2 {
-  
-  margin: 2rem 3rem 1rem;
-  font-family: 'Gugi', cursive;
-	text-align: left;
+  font-family: 'Jost', sans-serif;
+	text-align: center;
 	font-size: 2rem;
-  text-shadow: 0 0 .5rem deepskyblue;
-}
-h3 {
-  margin: 2rem 3rem 1rem;
-  font-family: 'Gugi', cursive;
-	text-align: left;
-	font-size: 1.5rem;
-  text-shadow: 0 0 .5rem deepskyblue;
-}
-h4 {
-  margin: 2rem 3rem .5rem;
-  font-family: 'Gugi', cursive;
-	text-align: left;
-	font-size: 1.25rem;
-  text-shadow: 0 0 .5rem deepskyblue;
+  font-weight: 600;
 }
 p {
+  
 	text-align: left;
-  margin: 1rem 3rem;
+  font-size: 1rem;
 }
 ol > li {
 	text-align: left;
   margin: .5rem 3rem;
 }
 
-#worldbuilding > h2 {
-  text-shadow: 0 0 .5rem cyan;
-}
-#photography > h2 {
-  text-shadow: 0 0 .5rem aqua;
-}
-
 .content {
+  box-sizing: border-box;
 	margin-top: 2rem;
 	margin-bottom: 1rem;
-  padding: 1rem .5rem;
-	width: min(90%,64rem);
-  color: var(--primary);
-  background-color: rgba(0,0,0,.15);
-  border-radius: 5rem;
-  box-shadow: 0 0 3rem white;
+  padding: 1rem 3rem;
+	width: min(90%,48rem);
+  color: var(--text);
+  background-color: rgba(255,255,255,.6);
+  backdrop-filter: blur(2rem);
+  border-radius: 0rem;
+}
+.content > p {
+  margin: 1rem 1rem;
+}
+.monospace {
+  font-family: 'Courier New', monospace;
 }
 .img-desc {
   text-align: center;
 	font-size: .75rem;
 }
-.socials {
-  margin: 0;
-  padding: 0rem;
-}
-.socials > ul {
-  margin: 1rem 2rem 1rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  list-style-type: none;
-}
-.socials > ul > li > a {
-  margin: 1rem;
-  padding: 1rem 1rem;
-  border-color: white;
-  background-color: rgba(0,0,0,.1);
-  border-style: solid;
-  border-width: .1rem;
-  border-radius: 2rem;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  transition: .2s;
-}
-.socials > ul > li > a:hover {
-  background-color: rgba(255,255,255,.15);
-}
-
-.figure > ul {
-  margin: 1rem 2rem 1rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  list-style-type: none;
-}
-.figure > ul > li {
-  margin: 1rem 0;
-  padding: 1rem 1rem;
-  border-color: white;
-  background-color: rgba(0,0,0,.1);
-  border-style: solid;
-  border-width: .1rem;
-  border-radius: 2rem;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  transition: .2s;
-}
-.figure > ul > li:hover {
-  background-color: rgba(255,255,255,.05);
-}
-.figure > ul > li > a {
-  color: var(--primary);
-  text-align: center;
-  margin: 1rem;
-  padding-bottom: 1rem;
-  border-color: white;
-  background-color: rgba(0,0,0,.1);
-  border-style: solid;
-  border-width: .1rem;
-  border-radius: 2rem;
-  transition: .2s;
-}
-.figure > ul > li > a:hover {
-  background-color: rgba(255,255,255,.05);
-}
-.figure > ul > li > a > h2 {
-  text-align: center;
-}
-
-#profile {
+.profile-img {
   display: block;
   margin: auto;
-  width: 24rem;
-}
-#monospace {
-  font-family: 'Courier New', monospace;
+  width: min(75%,24rem);
 }
 
 img.icon {
@@ -192,5 +104,4 @@ img.emoji {
   height: 2rem;
   width: 2rem;
   vertical-align: -.67rem;
-  filter:drop-shadow(0rem 0rem .1rem rgba(255,255,255,.5));
 }
