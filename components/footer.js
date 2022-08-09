@@ -12,6 +12,7 @@ class Footer extends HTMLElement {
 				}
 				#footer-text {
 					text-align: right;
+					margin-right: 2rem;
 				}
 			</style>
 

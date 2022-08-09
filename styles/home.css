@@ -45,14 +45,14 @@ h1 {
 	font-family: 'Poppins', sans-serif;
 	letter-spacing: .3rem;
 	text-align: center;
-	font-size: 3rem;
+	font-size: clamp(1rem,6vw,3rem);
 	font-weight: 900;
 }
 h2 {
 	font-family: 'Poppins', sans-serif;
 	letter-spacing: .2rem;
 	text-align: center;
-	font-size: 2rem;
+	font-size: clamp(1rem,6vw,2rem);
 	font-weight: 700;
 }
 p {
@@ -90,7 +90,7 @@ ol > li {
 	text-decoration: none;
 }
 .content > ul > a > li {
-	padding: 1rem 1rem;
+	padding: .5rem 1rem;
 	color: ghostwhite;
 	background-color: rgba(0,0,0,.25);
 	border-radius: 0rem;
@@ -128,8 +128,6 @@ ol > li {
 img.icon {
 	height: 2rem;
 	width: 2rem;
-	vertical-align: -.67rem;
-	filter:drop-shadow(0 0 .3rem rgba(0,0,0,.5));
 	filter:invert(1);
 }
 img.emoji {
