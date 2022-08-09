@@ -18,7 +18,6 @@ class Footer extends HTMLElement {
 
 			<footer>
 				<div class="footer">
-					<br/><hr>
 					<p id="footer-text">©Dracogriff 2021-2022</p>
 				</div>
 			</footer>
