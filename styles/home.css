@@ -157,6 +157,10 @@ img.button88x31 {
 	image-rendering: -moz-crisp-edges;
 	width: auto;
 	height: 31px;
+	display: inline-block;
+}
+.buttons {
+	text-align: center;
 }
 img.pixel {
 	image-rendering: crisp-edges;
