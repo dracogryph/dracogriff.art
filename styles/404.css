@@ -58,8 +58,7 @@ h2 {
 }
 p {
 	font-family: inherit;
-	text-align: left;
-	font-size: 1rem;
+	font-size: 1rem, inherit;
 }
 ol > li {
 	text-align: left;
@@ -73,84 +72,28 @@ ol > li {
 	padding: 1rem 3rem;
 	width: min(90%,54rem);
 	color: var(--text);
-	background-color: rgba(255,255,255,.5);
-	backdrop-filter: blur(2rem);
+	background-color: rgba(255,255,255,.0);
 	border-radius: 0rem;
+	position: relative;
 }
 .content > p {
 	margin: 1rem 1rem;
 }
-.content > ul {
-	padding-left: 0;
-	list-style-type: none;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-	grid-gap: 1rem;
-}
-.content > ul > a {
-	text-decoration: none;
-}
-.content > ul > a {
-	padding: 0.25rem 1rem;
-	color: ghostwhite;
-	background-color: rgba(0,0,0,.25);
-	border-radius: 0rem;
-	border-style: solid;
-	border-color: white;
-	border-width: .15rem;
-	align-items: center;
-	justify-content: center;
-	display: flex;
-	transition: .2s;
-	background-repeat: no-repeat;
-	background-size: 2rem;
-	background-position: 1rem center;
-}
-.content > ul > a:hover {
-	background-color: rgba(255,255,255,.0);
-}
 
-a#Twitter {
-	background-image: url("/icons/twittergriff.svg");
+.frame {
+	width: 100%;
+	height: 0;
+	padding-top: 100%;
 }
-a#Tumblr {
-	background-image: url("/icons/tumblr.svg");
-}
-a#FA {
-	background-image: url("/icons/furaffinity.svg");
-}
-a#Twitch {
-	background-image: url("/icons/twitch.svg");
-}
-a#Picarto {
-	background-image: url("/icons/picarto.svg");
-}
-a#Toyhouse {
-	background-image: url("/icons/toyhouse.svg");
-}
-a#Ko-fi {
-	background-image: url("/icons/ko-fi.svg");
-}
-a#Telegram {
-	background-image: url("/icons/telegram.svg");
-}
-a#Discord {
-	background-image: url("/icons/discordgriff.svg");
+.ardor {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 .monospace {
 	font-family: 'Courier New', monospace;
 }
-.img-desc {
-	text-align: center;
-	font-size: .75rem;
-}
-.profile-img {
-	display: block;
-	margin: auto;
-	width: min(75%,24rem);
-}
-
 img.button88x31 {
 	image-rendering: crisp-edges;
 	image-rendering: pixelated;
@@ -164,10 +107,4 @@ img.pixel {
 	image-rendering: -moz-crisp-edges;
 	width: 100%;
 	height: auto;
-}
-
-img.emoji {
-	height: 2rem;
-	width: 2rem;
-	vertical-align: -.67rem;
 }
