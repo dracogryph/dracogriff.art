@@ -35,6 +35,6 @@ function toggleNavbar() {
 
 function scrollto(id) {
 	toggleNavbar();
-	document.getElementById(id).scrollTo;
+	document.getElementById(id).scrollTo();
 	window.scrollBy(0,"-5rem");
 }
