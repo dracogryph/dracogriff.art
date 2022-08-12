@@ -9,12 +9,12 @@ class Navbar extends HTMLElement {
 			<div id="topbar" onclick="toggleNavbar();"><img src="/icons/protostar.svg" id="hamburger-helper"/></div>
 			<div class="navbar" id="hidden">
 				<ul id="buttons">
-					<a href="javascript:void(0);" onclick="scrollto(id);">About</a>
-					<a href="javascript:void(0);" onclick="scrollto(id);">Projects</a>
-					<a href="javascript:void(0);" onclick="scrollto(id);">Socials</a>
-					<a href="javascript:void(0);" onclick="scrollto(id);">Contact</a>
-					<a href="javascript:void(0);" onclick="scrollto(id);">Commissions</a>
-					<a href="javascript:void(0);" onclick="scrollto(id);">Friends</a>
+					<a href="javascript:void(0);" onclick="scrollto('about');">About</a>
+					<a href="javascript:void(0);" onclick="scrollto('projects');">Projects</a>
+					<a href="javascript:void(0);" onclick="scrollto('socials');">Socials</a>
+					<a href="javascript:void(0);" onclick="scrollto('contact');">Contact</a>
+					<a href="javascript:void(0);" onclick="scrollto('commissions');">Commissions</a>
+					<a href="javascript:void(0);" onclick="scrollto('friends');">Friends</a>
 				</ul>
 			</div>
 		`;
