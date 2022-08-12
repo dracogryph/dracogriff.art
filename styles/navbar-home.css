@@ -1,0 +1,96 @@
+#hamburger-helper {
+  margin: 0;
+  width: 3rem;
+  padding-left: 2rem;
+  padding-right:100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+	background-color: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(2rem);
+}
+.navbar {
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.0);
+	backdrop-filter: blur(2rem);
+  font-size: 1rem;
+  padding: 0rem;
+  display: grid;
+  position: fixed;
+	width: min(90%,54rem);
+  top: 5rem;
+  z-index: 1;
+  transition: .2s;
+}
+.navbar ul {
+  list-style: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+	grid-gap: .5rem;
+  margin: 0;
+	padding: 0.25rem 1rem;
+  display: grid;
+  z-index: 1;
+}
+.buttons {
+	transition: .2s;
+}
+
+.navbar a {
+  color: ghostwhite;
+  background-color: rgba(0,0,0,0.15);
+	backdrop-filter: blur(2rem);
+  padding: 1rem;
+	border-style: solid;
+	border-color: white;
+	border-width: .15rem;
+  text-decoration: none;
+	display: grid;
+  text-align: center;
+}
+.navbar a:hover {
+  background-color: rgba(0,0,0,0.0);
+	transition: .2s;
+}
+
+#shown {
+  display: grid;
+}
+
+#hidden {
+  display: none;
+}
+
+
+@media only screen and (min-width: 48rem) {
+  #hamburger-helper {
+    display: none;
+  }
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2rem);
+    display: grid;
+    padding: .5rem;
+    place-items: center;
+    position: initial;
+    top: 0;
+  }
+  .navbar a {
+	  backdrop-filter: blur(0);
+  }
+  .navbar ul {
+    position: initial;
+    grid-template-columns:none;
+  }
+  .navbar > ul {
+    grid-auto-flow: column;
+  }
+  #shown {
+    display: grid;
+  }
+  #hidden {
+    display: grid;
+  }
+}
