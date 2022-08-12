@@ -4,9 +4,9 @@ class Navbar extends HTMLElement {
 	}
 	connectedCallback() {
 		this.innerHTML = `
-    <link rel="stylesheet" href="/styles/navbar-home.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/navbar.css" type="text/css"/>
 
-			<div id="topbar" onclick="toggleNavbar();"><img src="/icons/protostar.svg" id="hamburger-helper"/></div>
+			<div id="topbar"><img src="/icons/protostar.svg" id="hamburger-helper" onclick="toggleNavbar();"/></div>
 			<div class="navbar" id="hidden" onclick="toggleNavbar();">
 				<ul id="buttons">`
 		+ this.innerHTML+
