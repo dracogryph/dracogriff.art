@@ -11,7 +11,7 @@ body {
 }
 body#horizon {
 	background-image: url("/img/SKY0167.jpg");
-	background-position: center top;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
