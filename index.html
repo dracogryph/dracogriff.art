@@ -102,7 +102,11 @@
         <script type="text/javascript" src="https://squidknees.neocities.org/squidring/onionring-variables.js"></script>
         <script type="text/javascript" src="https://squidknees.neocities.org/squidring/onionring-widget.js"></script>
         <!--squidring transparency fix-->
-        <script src="squidring/squidfix.js" type="text/javascript" defer></script>
+        <script>
+          document.querySelector('img[alt="previous site"]').src = "squidring/squidring-left.png";
+          document.querySelector('img[alt="squid ring webring"]').src = "squidring/squidring-center.png";
+          document.querySelector('img[alt="next site"]').src = "squidring/squidring-right.png";
+        </script>
       </div>
     </div>
 
