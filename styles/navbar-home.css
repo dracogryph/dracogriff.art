@@ -6,7 +6,6 @@
   top: 0;
   z-index: 1;
 	background-color: rgba(255, 255, 255, 0.5);
-	backdrop-filter: blur(2rem);
 }
 #hamburger-helper {
   margin: 0;
@@ -72,6 +71,10 @@
 }
 
 @media only screen and (min-width: 48rem) {
+  #topbar {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2rem);
+  }
   #hamburger-helper {
     display: none;
   }

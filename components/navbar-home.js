@@ -7,14 +7,14 @@ class Navbar extends HTMLElement {
     <link rel="stylesheet" href="/styles/navbar-home.css" type="text/css"/>
 
 			<div id="topbar" onclick="toggleNavbar();"><img src="/icons/protostar.svg" id="hamburger-helper"/></div>
-			<div class="navbar" id="hidden">
+			<div class="navbar" id="hidden" onclick="toggleNavbar();">
 				<ul id="buttons">
-					<a href="javascript:void(0);" onclick="scrollto('about');">About</a>
-					<a href="javascript:void(0);" onclick="scrollto('projects');">Projects</a>
-					<a href="javascript:void(0);" onclick="scrollto('socials');">Socials</a>
-					<a href="javascript:void(0);" onclick="scrollto('contact');">Contact</a>
-					<a href="javascript:void(0);" onclick="scrollto('commissions');">Commissions</a>
-					<a href="javascript:void(0);" onclick="scrollto('friends');">Friends</a>
+					<a href="#about" onclick="scrollto('about');">About</a>
+					<a href="#projects" onclick="scrollto('projects');">Projects</a>
+					<a href="#socials" onclick="scrollto('socials');">Socials</a>
+					<a href="#contact" onclick="scrollto('contact');">Contact</a>
+					<a href="#commissions" onclick="scrollto('commissions');">Commissions</a>
+					<a href="#friends" onclick="scrollto('friends');">Friends</a>
 				</ul>
 			</div>
 		`;
@@ -35,6 +35,5 @@ function toggleNavbar() {
 
 function scrollto(id) {
 	toggleNavbar();
-	document.getElementById(id).scrollTo();
-	window.scrollBy(0,"-5rem");
+	document.getElementById(id).scrollIntoView(true);
 }
