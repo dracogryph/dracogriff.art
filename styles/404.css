@@ -10,9 +10,7 @@ body {
 	font-family: 'Noto Sans', 'Verdana', sans-serif;
 }
 body#horizon {
-	background: url("//img/DSC_0167.jpeg");
-	background-color: var(--bg);
-	background-image: url("/img/DSC_0167.jpg");
+	background-image: url("/img/SKY0167.jpg");
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
