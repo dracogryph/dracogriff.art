@@ -6,7 +6,7 @@ class Navbar extends HTMLElement {
 		this.innerHTML = `
     <link rel="stylesheet" href="/styles/navbar-home.css" type="text/css"/>
 
-			<p id="hamburger-helper" onclick="toggleNavbar();"><img src="/icons/protostar.svg" class="hamburger-helper"/></p>
+			<div id="topbar" onclick="toggleNavbar();"><img src="/icons/protostar.svg" id="hamburger-helper"/></div>
 			<div class="navbar" id="hidden">
 				<ul id="buttons">
 					<a href="#about">About</a>
