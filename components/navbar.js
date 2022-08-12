@@ -8,13 +8,9 @@ class Navbar extends HTMLElement {
 
 			<div id="topbar" onclick="toggleNavbar();"><img src="/icons/protostar.svg" id="hamburger-helper"/></div>
 			<div class="navbar" id="hidden" onclick="toggleNavbar();">
-				<ul id="buttons">
-					<a href="#about">About</a>
-					<a href="#projects">Projects</a>
-					<a href="#socials">Socials</a>
-					<a href="#contact">Contact</a>
-					<a href="#commissions">Commissions</a>
-					<a href="#friends">Friends</a>
+				<ul id="buttons">`
+		+ this.innerHTML+
+		`
 				</ul>
 			</div>
 		`;
