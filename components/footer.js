@@ -5,7 +5,7 @@ class Footer extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
 			<style>
-				footer {
+				footer-component {
 					color: snow;
 					font-size: .8rem;
 					width: 100%;
@@ -15,7 +15,6 @@ class Footer extends HTMLElement {
 					margin-right: 2rem;
 				}
 			</style>
-
 			<footer>
 				<div class="footer">
 					<p id="footer-text">©Dracogriff 2021-2022</p>
