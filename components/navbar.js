@@ -4,14 +4,13 @@ class Navbar extends HTMLElement {
 	}
 }
 customElements.define('navbar-component', Navbar);
-
 function toggleNavbar() {
   // if navbar isn't hidden, show nav.
-  if (document.getElementById("hidden") !== null) {
-    document.getElementById("hidden").id = "shown";
+  if (document.getElementById("nav-hidden") !== null) {
+    document.getElementById("nav-hidden").id = "nav-shown";
   }
   // else, hide navbar.
   else {
-    document.getElementById("shown").id = "hidden";
+    document.getElementById("nav-shown").id = "nav-hidden";
   }
 }

@@ -5,28 +5,45 @@
 html {
 	scroll-behavior: smooth;
 }
-
 body {
 	font-family: 'Noto Sans', 'Verdana', sans-serif;
 }
+/* horizon background */
 body#horizon {
-	background-image: url("/img/SKY0167.jpg");
+	background-image: url("/img/horizon.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
 	margin: 0;
 }
-
 div {
 	margin: auto;
 }
 
+/* image */
 img {
 	width: 100%;
 }
+img.profile {
+	display: block;
+	margin: auto;
+	width: min(75%,24rem);
+}
+img.emoji {
+	height: 2rem;
+	vertical-align: -.67rem;
+	width: 2rem;
+}
+.pixel {
+	height: auto;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	width: 100%;
+}
 
-/* HYPERLINKS */
+/* hyperlinks */
 a:link {
 	color: coral;
 }
@@ -40,57 +57,60 @@ a:active {
 	color: white;
 }
 
+/* text */
 h1 {
-	font-family: 'Poppins', sans-serif;
-	letter-spacing: .3rem;
 	text-align: center;
+	font-family: 'Poppins', sans-serif;
 	font-size: clamp(1rem,6vw,3rem);
 	font-weight: 900;
+	letter-spacing: .3rem;
 }
 h2 {
-	font-family: 'Poppins', sans-serif;
-	letter-spacing: .2rem;
 	text-align: center;
+	font-family: 'Poppins', sans-serif;
 	font-size: clamp(1rem,6vw,2rem);
 	font-weight: 700;
+	letter-spacing: .2rem;
 }
 p {
-	font-family: inherit;
 	text-align: left;
+	font-family: inherit;
 	font-size: 1rem;
 }
-ol > li {
-	text-align: left;
-	margin: .5rem 3rem;
+.monospace {
+	font-family: 'Courier New', monospace;
+}
+.center {
+	text-align: center;
 }
 
+/* .content */
 .content {
+	backdrop-filter: blur(2rem);
+	background-color: rgba(255,255,255,.5);
+	border-radius: 0rem;
 	box-sizing: border-box;
-	margin-top: 1rem;
+	color: var(--text);
 	margin-bottom: 1rem;
+	margin-top: 1rem;
 	padding: 1rem 3rem;
 	width: min(90%,54rem);
-	color: var(--text);
-	background-color: rgba(255,255,255,.5);
-	backdrop-filter: blur(2rem);
-	border-radius: 0rem;
 }
-.content > p {
-	margin: 1rem 1rem;
-}
-.content > ul {
-	padding-left: 0;
-	list-style-type: none;
+
+/* .button-panel */
+.button-panel {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+	list-style-type: none;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	padding-left: 0;
 }
-.content > ul > a {
-	text-decoration: none;
-}
-.content > ul > a {
+
+/* .button */
+.button {
 	padding: 0.25rem 1rem;
-	color: ghostwhite;
 	background-color: rgba(0,0,0,.25);
 	border-radius: 0rem;
 	border-style: solid;
@@ -103,11 +123,16 @@ ol > li {
 	background-repeat: no-repeat;
 	background-size: 2rem;
 	background-position: 1rem center;
+	text-decoration: none;
 }
-.content > ul > a:hover {
+.button > p {
+	color: ghostwhite;
+}
+.button:hover {
 	background-color: rgba(255,255,255,.0);
 }
 
+/* button icons */
 a#Twitter {
 	background-image: url("/icons/twittergriff.svg");
 }
@@ -136,61 +161,22 @@ a#Discord {
 	background-image: url("/icons/discordgriff.svg");
 }
 
-.monospace {
-	font-family: 'Courier New', monospace;
-}
-.img-desc {
-	text-align: center;
-	font-size: .75rem;
-}
-.profile-img {
-	display: block;
-	margin: auto;
-	width: min(75%,24rem);
-}
-
+/* 88x31 web buttons */
 img.button88x31 {
+	display: inline-block;
+	height: 31px;
 	image-rendering: crisp-edges;
 	image-rendering: pixelated;
 	image-rendering: -moz-crisp-edges;
 	width: auto;
-	height: 31px;
-	display: inline-block;
 }
-.buttons {
-	text-align: center;
-}
-.pixel {
-	image-rendering: crisp-edges;
-	image-rendering: pixelated;
-	image-rendering: -moz-crisp-edges;
+
+/* footer */
+.footer {
+	color: ghostwhite;
 	width: 100%;
-	height: auto;
 }
-
-img.emoji {
-	height: 2rem;
-	width: 2rem;
-	vertical-align: -.67rem;
-}
-
-
-
-.header {
-	background-image:
-		linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.9)),
-		url("/skyward/img/DSC_0141.png");
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.main-logo {
-	width: 5rem;
-	display:block;
-	margin:auto;
-}
-@media only screen and (min-width: 48rem) {
-	.main-logo {
-		width: min(15rem, 50%);
-	}
+.footer > p {
+	text-align: right;
+	margin-right: 2rem;
 }

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Dracogriff's Nest</title>
-    <meta charset="UTF-8"/>
-    <html lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/icons/protostar.svg">
+    <meta name="description" content="Dracogriff's Home Page">
+		<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--OpenGraph-->
     <meta property="og:title" content="Dracogriff">
     <meta property="og:site_name" content="Dracogriff's Nest">
     <meta property="og:url" content="https://dracogriff.art/skyward/">
@@ -14,44 +15,25 @@
     <meta property="og:image:secure_url" content="https://dracogriff.art/img/mdlabick-uv.png">
     <meta property="og:image:width" content="1600">
     <meta property="og:image:height" content="1600">
-    <meta name="description" content="Dracogriff's Home Page">
     <!--Twemoji-->
     <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> 
-    <!--navbar-->
-    <script src="components/navbar.js" defer></script>
-    <!--footer-->
-    <script src="components/footer.js" defer></script>
-    <!--squidring import-->
-    <link href="https://squidknees.neocities.org/squidring/onionring.css" rel="stylesheet" type="text/css" media="all" defer>
-    <!--stylesheet-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+		<!--stylesheet-->
     <link rel="stylesheet" href="/styles/home.css" type="text/css"/>
-    <link rel="stylesheet" href="/styles/navbar.css" type="text/css"/>
-  </head>
+    <!--squidring import-->
+    <link href="https://squidknees.neocities.org/squidring/onionring.css" rel="stylesheet" type="text/css" media="all">
+	</head>
 
-  <body id="horizon">
-    <!--navbar-->
-    <div id="topbar"><img src="/icons/protostar.svg" id="hamburger-helper" onclick="toggleNavbar();"/></div>
-    <div class="navbar" id="hidden" onclick="toggleNavbar();">
-      <ul id="buttons">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#socials">Socials</a>
-        <a href="#contact">Contact</a>
-        <a href="#commissions">Commissions</a>
-        <a href="#friends">Friends</a>
-      </ul>
-    </div>
-
-    <!--Main-->
+	<body id="horizon">
+		<!--Main-->
     <div class="content">
       <h1>DRACOGRIFF</h1>
-      <img class="profile-img" src="img/mdlabick-uv.png" title="caw!">
-      <p class="img-desc">(art by <a href="https://mdlabick.com/">mdlabick</a>)</p>
+      <img class="profile" src="img/mdlabick-uv.png" title="caw!">
+      <p class="center">(art by <a href="https://mdlabick.com/">mdlabick</a>)</p>
       <br>
     </div>
 
@@ -69,41 +51,39 @@
     <!--Socials-->
     <div class="content" id="socials">
       <h2>SOCIALS</h2>
-      <ul>
-        <a id="Twitter" href="https://twitter.com/dracogryphilia"><p>Twitter</p></a>
-        <a id="Tumblr" href="https://dracogriff.tumblr.com"><p>Tumblr</p></a>
-        <a id="FA" href="https://www.furaffinity.net/user/dracogriff"><p>FurAffinity</p></a>
-        <a id="Twitch" href="https://www.twitch.tv/dracogryphilia"><p>Twitch</p></a>
-        <a id="Picarto" href="https://picarto.tv/Dracogriff"><p>Picarto</p></a>
-        <a id="Toyhouse" href="https://toyhou.se/Dracogriff"><p>Toyhouse</p></a>
-
-      </ul>
+      <div class="button-panel">
+        <a class="button" id="Twitter" href="https://twitter.com/dracogryphilia"><p>Twitter</p></a>
+        <a class="button" id="Tumblr" href="https://dracogriff.tumblr.com"><p>Tumblr</p></a>
+        <a class="button" id="FA" href="https://www.furaffinity.net/user/dracogriff"><p>FurAffinity</p></a>
+        <a class="button" id="Twitch" href="https://www.twitch.tv/dracogryphilia"><p>Twitch</p></a>
+        <a class="button" id="Picarto" href="https://picarto.tv/Dracogriff"><p>Picarto</p></a>
+        <a class="button" id="Toyhouse" href="https://toyhou.se/Dracogriff"><p>Toyhouse</p></a>
+			</div>
     </div>
 
     <!--Contact Info-->
     <div class="content" id="contact">
       <h2>CONTACT</h2>
-      <ul>
-        <a id="Ko-fi" href="https://ko-fi.com/dracogriff"><p>Ko-fi</p></a>
-        <a id="Telegram" href="https://telegram.me/dracogriff"><p>Telegram</p></a>
-        <a id="Discord" tabindex="0"><p>Dracogriff#3791</p></a>
-      </ul>
+      <div class="button-panel">
+        <a class="button" id="Ko-fi" href="https://ko-fi.com/dracogriff"><p>Ko-fi</p></a>
+        <a class="button" id="Telegram" href="https://telegram.me/dracogriff"><p>Telegram</p></a>
+        <a class="button" id="Discord" tabindex="0"><p>Dracogriff#3791</p></a>
+			</div>
     </div>
 
     <!--Commissions-->
     <div class="content" id="commissions">
       <h2>COMMISSIONS</h2>
       <p>If you'd like to commission me, read my commission terms of service!</p>
-      <ul>
-        <a href="https://dracogriff.art/tos"><li><p>commission terms of service</p>
-        </li></a>
-      </ul>
+      <div class="button-panel">
+        <a  class="button"href="https://dracogriff.art/tos"><p>commission terms of service</p></a>
+			</div>
     </div>
 
     <!--Friends-->
     <div class="content" id="friends">
       <h2>friends</h2>
-      <div class="buttons">
+      <div class="center">
         <img class="button88x31" src="/icons/btn-dracogriff.png" title="Dracogriff">
         <a href="https://jayeaton.site/"><img class="button88x31" src="https://jayeaton.neocities.org/btn-jayeaton.png" title="Jay Eaton"></a>
         <a href="http://jayeaton.neocities.org/RunawayToTheStars/home.html"><img class="button88x31" src="https://jayeaton.neocities.org/btn-rtts.png" title="Runaway to the Stars"></a>
@@ -122,12 +102,9 @@
         </script>
       </div>
     </div>
-
-    <!--footer-->
-    <footer-component></footer-component>
-  </body>
-
-  <!--Twemoji parser-->
-  <script>document.getElementsByTagName("body")[0].innerHTML=twemoji.parse(document.getElementsByTagName("body")[0].innerHTML)</script>
+		<!--Footer-->
+		<div class="footer">
+			<p>©Dracogriff 2021-2022</p>
+		</div>
+	</body>
 </html>
-
