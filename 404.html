@@ -21,12 +21,17 @@
 
 		<!--stylesheet-->
 		<link rel="stylesheet" href="/styles/404.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/navbar.css" type="text/css"/>
 	</head>
 
-  <body id="horizon">    <!--navbar-->
-    <navbar-component>
+  <body id="horizon">
+    <div id="topbar"><img src="/icons/protostar.svg" id="hamburger-helper" onclick="toggleNavbar();"/></div>
+    <div class="navbar" id="navbarhidden" onclick="toggleNavbar();">
+      <ul id="buttons">
       <a href="./">HOME</a>
-    </navbar-component>
+		</ul>
+	</div>
+	
 		<h1>404: PAGE NOT FOUND</h1>
 		<div class="content">
 			<div class="frame">

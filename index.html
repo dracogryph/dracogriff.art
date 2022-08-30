@@ -30,18 +30,22 @@
     <link href="https://squidknees.neocities.org/squidring/onionring.css" rel="stylesheet" type="text/css" media="all" defer>
     <!--stylesheet-->
     <link rel="stylesheet" href="/styles/home.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/navbar.css" type="text/css"/>
   </head>
 
   <body id="horizon">
     <!--navbar-->
-    <navbar-component>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#socials">Socials</a>
-      <a href="#contact">Contact</a>
-      <a href="#commissions">Commissions</a>
-      <a href="#friends">Friends</a>
-    </navbar-component>
+    <div id="topbar"><img src="/icons/protostar.svg" id="hamburger-helper" onclick="toggleNavbar();"/></div>
+    <div class="navbar" id="hidden" onclick="toggleNavbar();">
+      <ul id="buttons">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#socials">Socials</a>
+        <a href="#contact">Contact</a>
+        <a href="#commissions">Commissions</a>
+        <a href="#friends">Friends</a>
+      </ul>
+    </div>
 
     <!--Main-->
     <div class="content">
