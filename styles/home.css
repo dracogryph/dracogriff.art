@@ -131,6 +131,9 @@ p {
 .button:hover {
 	background-color: rgba(255,255,255,.0);
 }
+.button:hover > p {
+	color: dodgerblue;
+}
 
 /* button icons */
 a#Twitter {
