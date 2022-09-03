@@ -178,8 +178,11 @@ img.button88x31 {
 .footer {
 	color: ghostwhite;
 	width: 100%;
+	border-radius: 0rem;
+	box-sizing: border-box;
+	padding: 0rem 3rem;
+	width: min(90%,54rem);
 }
 .footer > p {
 	text-align: right;
-	margin-right: 2rem;
 }
